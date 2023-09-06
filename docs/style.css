@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+body{
+padding: 0;
+margin: 0 15%;
+background-color: #030b0c;
+scroll-behavior: smooth;
+color: #e7f7f8;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-family: 'Inter', sans-serif;
+}
+.header_logo{
+    width: 50px;
+}
+.content{
+width: 70vw;
+height: 100vh;
+}
+
+
+::-webkit-scrollbar {
+    margin-left: 1em;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(129, 129, 129, 0.5);
+}
