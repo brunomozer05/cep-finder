@@ -37,6 +37,7 @@ font-family: 'Inter', sans-serif;
     width: 50px;
 }
 .title{
+padding-top: 10%;
 font-size: 48px;
 letter-spacing: -1px;
 font-weight: 700;
@@ -48,12 +49,14 @@ margin-inline-start: 0px;
 margin-inline-end: 0px;
 }
 .subtitle{
+    padding-top: 7%;
     line-height: 150%;
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    font-size: 24px;;
 }
 .content{
 
@@ -63,20 +66,48 @@ display: flex;
 flex-direction: row;
 align-items: center;
 width: 70vw;
-height: 60vh;
+height: 80vh;
+padding-bottom: 3em;
 }
 
 .content_right{
 width: 100%;
-height: 50vh;
+height: 100%;
+border-radius: 15px;
+background-color: #091415;
 }
-
-
-
 .content_left{
     width: 100%;
-    height: 50vh;
+    height: 100%;
 }
+.part1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-around;
+    align-items: center;
+}
+.box1,.box2,.box3{
+    border-radius: 15px;
+    width: 30%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #091415;
+}
+.part2{
+
+width: 100%;
+height: 70vh;
+    
+}
+
+
+
+
 
 ::-webkit-scrollbar {
     margin-left: 1em;
