@@ -6,6 +6,7 @@
     <title>CEP Finder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.png">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 <body>
     <div class="header">
@@ -16,12 +17,26 @@
         
     </div>
     <div class="content">
-        <div class="content_left"></div>
-        <div class="content_right"></div>
+        <div id="map"></div>
+        
+        <div class="content_left">
+            <h1 class="title">Search Your Zip Code</h1>
+            <p class="subtitle">Lorem ipsum dolor sit  ipsum dolor sit  ipsum dolor sit  ipsum dolor sit  ipsum dolor sit  ipsum dolor sit  ipsum dolor sit amet </p>
+        </div>
+        <div class="content_right">
+            <input type="number" id="cepinput">
+            <button onclick="fetchcep()" class="button">
+                <span class="button-content">--cep--</span>
+            </button>
+        </div>
     </div>
 
 
 
     <script src="script.js"></script>
 </body>
+<script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+    defer
+</script>
 </html>
