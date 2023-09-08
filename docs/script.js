@@ -6,6 +6,6 @@ const fetchcep = async () => {
         .then(adress => adress.json())
         .then (cep => cep)
         
-        console.log(adress)
-        console.log(inputcep)
+        console.log(adress);
+        document.getElementById("result").innerHTML = adress
 }

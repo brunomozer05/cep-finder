@@ -23,26 +23,48 @@
             <h1 class="title">Search Your <span class="color_text">Postal Code</span><br> For Free</h1>
             <p class="subtitle">Explore our CEP Finder website.<br>a platform for easy and free postal code searches.</p>
             <div class="buttons">
-                <button id="button1">How it Works</button>
-                <button id="button2">Other projects</button>
+                <a href="#part2"><button id="button1">How it Works</button></a>
+                <a href="#projects"><button id="button2">Other projects</button></a>
             </div>
         </div>
         <div class="content_right">
-            <input type="number" name="text" id="cepinput" class="input" placeholder="Type your postal code">
-            <button onclick="fetchcep()" class="button">
-                <span class="button-content">--cep--</span>
-            </button>
+            <div id="result"></div>
+            <input type="number" name="text" id="cepinput" class="input" placeholder="Type Your Postal Code">
+            <button id="button3" onclick="fetchcep()" class="button">Submit</button>
         </div>
     </div>
-    <h1>How it works</h1>
-    <div class="part1">
-
+    <h1>Project Overview</h1>
+    <div id="part1" class="part1">
+        <p>The "CEP Finder" project is a web application designed to help users find location data based on Brazilian postal codes, known as CEP (Código de Endereçamento Postal). This project is implemented using JavaScript, HTML, and CSS, and it leverages the Fetch API for data retrieval.</p>
     </div>
-    <div class="part2"></div>
-    <h1>Other projects</h1>
+
+    <h1>How it works</h1>
+
+    <div id="part2" class="part2">
+        <div class="p1">
+        <p><h1>1</h1>The user visits the "CEP Finder" web page. </p>
+        </div>
+        <div class="p2">
+            <p><h1>2</h1>They are presented with an input field where they can enter a Brazilian postal code (CEP).</p>
+        </div>
+        <div class="p3">
+            <p><h1>3</h1>After entering a valid CEP and submitting the form, the application triggers a Fetch API request to a backend service or API that handles CEP data retrieval.</p>
+        </div>
+        <div class="p4">
+            <p><h1>4</h1>The backend service processes the request and returns information related to the entered CEP.</p>
+        </div>
+        <div class="p5">
+            <p><h1>5</h1>The JavaScript code in the application receives this data and dynamically updates the webpage to display the fetched information, including the address details.</p>
+        </div>
+        <div class="p6">
+            <p><h1>6</h1>If any errors occur during the process, the application provides appropriate feedback to the user.</p>
+        </div>
+    </div>
+    <div id="part3" class="part3"></div>
+    <h1 id="projects">Other projects</h1>
     <div class="projects">
         <div class="box1">
-            <a href="https://github.com/brunomozer05/faltometro">
+            <a style="text-decoration: none;" href="https://brunomozer05.github.io/faltometro/">
                 <h1 class="project1">Faltometro</h1>
             </a>
         </div>
@@ -57,15 +79,11 @@
             </a>
         </div>
     </div>
-
     </div>
 
+    <p>Copyright © 2023 Bruno Mozer. All Rights Reserved.</p>
 
 
     <script src="script.js"></script>
 </body>
-<script>
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-    defer
-</script>
 </html>
