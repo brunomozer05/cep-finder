@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@300&family=Victor+Mono:wght@700&display=swap');
 
 body{
 padding: 0;
@@ -56,10 +57,14 @@ margin-inline-end: 0px;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    font-size: 24px;;
+    font-size: 24px;
+}
+.color_text{
+background: linear-gradient(120deg, #20416f, #aad4da);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 .content{
-
 width: 70vw;
 height: 100vh;
 display: flex;
@@ -67,7 +72,7 @@ flex-direction: row;
 align-items: center;
 width: 70vw;
 height: 80vh;
-padding-bottom: 3em;
+padding-bottom: 4rem;
 }
 
 .content_right{
@@ -75,12 +80,16 @@ width: 100%;
 height: 100%;
 border-radius: 15px;
 background-color: #091415;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
 .content_left{
     width: 100%;
     height: 100%;
 }
-.part1{
+.projects{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -98,16 +107,100 @@ background-color: #091415;
     align-items: center;
     background-color: #091415;
 }
-.part2{
-
-width: 100%;
-height: 70vh;
-    
+.part1{
+margin-top: 1rem;
+width: 70%;
+height: 50vh;
+background-color: #091415;
+border-radius: 15px;
 }
 
+    /*--Button--*/
+
+#button1,#button2{
+
+margin-top: 3rem;
+
+}
+.part2{
+width: 100%;
+height: 20vh;
+}
+.box1{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#button1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #e7f7f8;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #20416f;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+   
+   #button1:hover {
+    
+    transform: translateY(-2px);
+    box-shadow: 7px 5px 56px -14px #20416f;
+   }
+   
+   #button1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #20416f;
+   }
+   
+   /*--Button 2--*/
+
+   #button2 {
+    margin-left: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #e7f7f8;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-radius: 9px;
+    background: #091415;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+   
+   #button2:hover {
+    
+    transform: translateY(-2px);
+    box-shadow: 7px 5px 56px -14px #091415;
+   }
+   
+   #button2:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #091415;
+   }
 
 
-
+    /*--Scrollbar--*/
 
 ::-webkit-scrollbar {
     margin-left: 1em;
@@ -119,4 +212,48 @@ height: 70vh;
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgba(129, 129, 129, 0.5);
+}
+.project1 {
+    color: black;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    background: #FBCA1F;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    
+    
+  }
+  
+  .project1:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em
+    
+}
+/*Input CEP*/
+.input {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #fff;
+    background-color: #030b0c;
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    max-width: 190px;
+    transition: .4s;
+    
+  }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
