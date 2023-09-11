@@ -6,7 +6,7 @@
     <title>CEP Finder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/iconblue.png">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
 </head>
 <body>
     <div class="header">
@@ -28,14 +28,28 @@
             </div>
         </div>
         <div class="content_right">
-            <div id="result"></div>
-            <input type="number" name="text" id="cepinput" class="input" placeholder="Type Your Postal Code">
+            <div id="result">
+                <div id="printCity" class="city">
+
+                </div>
+                <div id="printState" class="state">
+
+                </div>
+                <div id="printAddress" class="address">
+
+                </div>
+                <div id="printDistrict" class="district">
+
+                </div>
+
+            </div>
+            <input type="number" maxlength="8" name="text" id="cepinput" class="input" placeholder="Type Your Postal Code">
             <button id="button3" onclick="fetchcep()" class="button">Submit</button>
         </div>
     </div>
     <h1>Project Overview</h1>
     <div id="part1" class="part1">
-        <p>The "CEP Finder" project is a web application designed to help users find location data based on Brazilian postal codes, known as CEP (Código de Endereçamento Postal). This project is implemented using JavaScript, HTML, and CSS, and it leverages the Fetch API for data retrieval.</p>
+        <p class="posub">The "CEP Finder" project is a web application designed to help users find location data based on Brazilian postal codes, known as CEP (Código de Endereçamento Postal). This project is implemented using JavaScript, HTML, and CSS, and it leverages the Fetch API for data retrieval.</p>
     </div>
 
     <h1>How it works</h1>
@@ -44,40 +58,52 @@
         <div class="up">
         
             <div class="txt">
-        
-                <p><b>1</b> The user visits the "CEP Finder" web page. </p>
-        
-            </div>
-        
-            <div class="txt">
-        
-                <p><b>2</b> They are presented with an input field where they can enter a Brazilian postal code (CEP).</p>
+                <div class="number">
+                    <b class="number">1</b>
+                </div>
+                <p>The user visits the "CEP Finder" web page. </p>
         
             </div>
         
             <div class="txt">
+                <div class="number">
+                    <b class="number">2</b>
+                </div>
+                <p>They are presented with an input field where they can enter a Brazilian postal code (CEP).</p>
         
-                <p><b>3</b> After entering a valid CEP and submitting the form, the application triggers a Fetch API request to a backend service or API that handles CEP data retrieval.</p>
+            </div>
+        
+            <div class="txt">
+                <div class="number">
+                    <b class="number">3</b>
+                </div>
+                <p> After entering a valid CEP and submitting the form, the application triggers a Fetch API request to a backend service or API that handles CEP data retrieval.</p>
         
             </div>
         </div>
         <div class="down">
         
             <div class="txt">
-        
-                <p><b>4</b> The backend service processes the request and returns information related to the entered CEP.</p>
-        
-            </div>
-        
-            <div class="txt">
-        
-                <p><b>5</b> The JavaScript code in the application receives this data and dynamically updates the webpage to display the fetched information, including the address details.</p>
+                <div class="number">
+                    <b class="number">4</b>
+                </div>
+                <p> The backend service processes the request and returns information related to the entered CEP.</p>
         
             </div>
         
             <div class="txt">
-                
-               <p><b>6</b> If any errors occur during the process, the application provides appropriate feedback to the user.</p>
+                <div class="number">
+                    <b class="number">5</b>
+                </div>
+                <p> The JavaScript code in the application receives this data and dynamically updates the webpage to display the fetched information, including the address details.</p>
+        
+            </div>
+        
+            <div class="txt">
+                <div class="number">
+                    <b class="number">6</b>
+                </div> 
+               <p> If any errors occur during the process, the application provides appropriate feedback to the user.</p>
         
             </div>
         </div>
@@ -93,12 +119,12 @@
         </div>
         <div class="box2">
             <a href="https://brunomozer05.github.io/currency-converter/">
-                <img src="https://raw.githubusercontent.com/brunomozer05/currency-converter/main/docs/icon/icon.png" alt="">
+                <img class="img" src="https://raw.githubusercontent.com/brunomozer05/currency-converter/main/docs/icon/icon.png" alt="">
             </a>
         </div>
         <div class="box3">
             <a href="https://brunomozer05.github.io/gas-tracker/">
-                <img src="https://raw.githubusercontent.com/BrunoMozer05/gas-tracker/main/docs/img/icon.png" alt="">
+                <img class="img" src="https://raw.githubusercontent.com/BrunoMozer05/gas-tracker/main/docs/img/icon.png" alt="">
             </a>
         </div>
     </div>

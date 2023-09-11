@@ -2,10 +2,13 @@ const fetchcep = async () => {
     const url = 'https://cep.awesomeapi.com.br/json/'
     const inputcep = document.getElementById('cepinput').value
 
-        adress = await fetch(url + inputcep)
+    const {cep,address,state,district,city,ddd} = await fetch(url + inputcep)
         .then(adress => adress.json())
-        .then (cep => cep)
         
-        console.log(adress);
-        document.getElementById("result").innerHTML = adress
-}
+        console.log(cep);
+      
+        document.getElementById("printCity").innerHTML = `City: ${city}`
+        document.getElementById("printState").innerHTML = ` ${state}`
+        document.getElementById("printAddress").innerHTML = `Address: ${address}`
+        document.getElementById("printDistrict").innerHTML = `District: ${district}`
+    }
