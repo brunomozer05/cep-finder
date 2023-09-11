@@ -6,9 +6,17 @@
     <title>CEP Finder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/iconblue.png">
-
+    <!-- Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="crossorigin="">
+    </script>
+    <!--------->
 </head>
 <body>
+
     <div class="header">
         <div class="logo">
             <img class="header_logo" src="img/iconblue.png" alt="">
@@ -17,7 +25,6 @@
         
     </div>
     <div class="content">
-        <div id="map"></div>
         
         <div class="content_left">
             <h1 class="title">Search Your <span class="color_text">Postal Code</span><br> For Free</h1>
@@ -28,6 +35,7 @@
             </div>
         </div>
         <div class="content_right">
+            <div   id="map"></div>
             <div id="result">
                 <div id="printCity" class="city">
 
@@ -43,8 +51,10 @@
                 </div>
 
             </div>
-            <input type="number" maxlength="8" name="text" id="cepinput" class="input" placeholder="Type Your Postal Code">
-            <button id="button3" onclick="fetchcep()" class="button">Submit</button>
+            <div class="overlay">
+                <input type="number" maxlength="8" name="text" id="cepinput" class="input" placeholder="Type Your Postal Code">
+                <button id="button3" onclick="fetchcep()" class="button">Submit</button>
+            </div>
         </div>
     </div>
     <h1>Project Overview</h1>
@@ -131,7 +141,6 @@
     </div>
 
     <p>Copyright © 2023 Bruno Mozer. All Rights Reserved.</p>
-
 
     <script src="script.js"></script>
 </body>
