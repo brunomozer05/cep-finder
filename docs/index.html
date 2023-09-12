@@ -29,34 +29,31 @@
         <div class="content_left">
             <h1 class="title">Search Your <span class="color_text">Postal Code</span><br> For Free</h1>
             <p class="subtitle">Explore our CEP Finder website.<br>a platform for easy and free postal code searches.</p>
+            
             <div class="buttons">
                 <a href="#part2"><button id="button1">How it Works</button></a>
                 <a href="#projects"><button id="button2">Other projects</button></a>
-            </div>
+            </div>            
         </div>
+
+
         <div class="content_right">
-            <div   id="map"></div>
-            <div id="result">
-                <div id="printCity" class="city">
-
+            <div class="info">
+                <div class="result">
+                  <div id="printCity"></div>
+                  <div id="printAddress"></div>
+                  <div id="printDistrict"></div>
                 </div>
-                <div id="printState" class="state">
-
-                </div>
-                <div id="printAddress" class="address">
-
-                </div>
-                <div id="printDistrict" class="district">
-
-                </div>
-
             </div>
+            <div id="map"></div>
             <div class="overlay">
-                <input type="number" maxlength="8" name="text" id="cepinput" class="input" placeholder="Type Your Postal Code">
+                <input type="number" inputmode="numeric" name="text" id="cepinput" class="input" placeholder="Type Your Postal Code">
                 <button id="button3" onclick="fetchcep()" class="button">Submit</button>
             </div>
-        </div>
     </div>
+        
+    </div>
+    
     <h1>Project Overview</h1>
     <div id="part1" class="part1">
         <p class="posub">The "CEP Finder" project is a web application designed to help users find location data based on Brazilian postal codes, known as CEP (Código de Endereçamento Postal). This project is implemented using JavaScript, HTML, and CSS, and it leverages the Fetch API for data retrieval.</p>
@@ -71,7 +68,7 @@
                 <div class="number">
                     <b class="number">1</b>
                 </div>
-                <p>The user visits the "CEP Finder" web page. </p>
+                <p> The process begins when a user accesses the "CEP Finder" web page using their web browser. This web page is designed to help users find information related to Brazilian postal codes (CEP).</p>
         
             </div>
         
@@ -82,7 +79,9 @@
                 <p>They are presented with an input field where they can enter a Brazilian postal code (CEP).</p>
         
             </div>
-        
+    
+        </div>
+        <div class="midle">
             <div class="txt">
                 <div class="number">
                     <b class="number">3</b>
@@ -90,9 +89,6 @@
                 <p> After entering a valid CEP and submitting the form, the application triggers a Fetch API request to a backend service or API that handles CEP data retrieval.</p>
         
             </div>
-        </div>
-        <div class="down">
-        
             <div class="txt">
                 <div class="number">
                     <b class="number">4</b>
@@ -100,6 +96,10 @@
                 <p> The backend service processes the request and returns information related to the entered CEP.</p>
         
             </div>
+            
+        </div>
+        <div class="down">
+        
         
             <div class="txt">
                 <div class="number">
