@@ -3,7 +3,7 @@
   <a href="https://github.com/brunomozer05/cep-finder">
     <img src="https://github.com/brunomozer05/cep-finder/blob/main/docs/img/iconblue.png?raw=true" alt="Logo" width="128" height="128">
   </a>
-  <a href="https://github.com/brunomozer05/cep-finder">
+  <a href="https://brunomozer05.github.io/cep-finder/">
   <h3 align="center">CEP Finder</h3>
   </a>
   <p align="center" >
@@ -12,7 +12,7 @@
     <br />
     <br />
     <br />
-    <a href="https://github.com/brunomozer05/cep-finder">Project Preview
+    <a href="https://brunomozer05.github.io/cep-finder/">Project Preview
     </a>
     <br />
     <br />
