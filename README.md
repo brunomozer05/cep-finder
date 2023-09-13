@@ -3,15 +3,17 @@
   <a href="https://github.com/brunomozer05/cep-finder">
     <img src="https://github.com/brunomozer05/cep-finder/blob/main/docs/img/iconblue.png?raw=true" alt="Logo" width="128" height="128">
   </a>
-
+  <a href="https://github.com/brunomozer05/cep-finder">
   <h3 align="center">CEP Finder</h3>
-
-  <p align="center">
+  </a>
+  <p align="center" >
    Instantly retrieve Brazilian location details by entering postal codes (CEP).<br> Simple and efficient.
     <br />
     <br />
     <br />
     <br />
+    <a href="https://github.com/brunomozer05/cep-finder">Project Preview
+    </a>
     <br />
     <br />
     <br />
