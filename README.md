@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/brunomozer05/cep-finder">
+  <a href="https://brunomozer05.github.io/cep-finder/">
     <img src="https://github.com/brunomozer05/cep-finder/blob/main/docs/img/iconblue.png?raw=true" alt="Logo" width="128" height="128">
   </a>
   <a href="https://brunomozer05.github.io/cep-finder/">
