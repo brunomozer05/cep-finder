@@ -31,6 +31,6 @@ CEP Finder: A single-developer project that simplifies location searches in Braz
  They can zoom in, pan across the map.
  
 <h3>User-Friendly Design:</h3>
-<img src="https://github.com/brunomozer05/cep-finder/blob/main/img/vid2.gif?raw=true">
+<img src="https://github.com/brunomozer05/cep-finder/blob/main/img/vid1.gif?raw=true">
 User-Friendly Design: The application boasts a user-friendly and intuitive design, ensuring that individuals with varying levels of 
 technical expertise can comfortably use it. Navigating the map and accessing location data is straightforward and accessible to all users.
